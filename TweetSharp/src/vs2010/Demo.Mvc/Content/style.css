@@ -1,0 +1,63 @@
+﻿	body, html { margin: 0; padding: 0; background: #9AE4E8; color: #000; font-family:Arial; }
+	body { min-width:850px; }
+	
+	#wrap { background: #DDFFCC; margin: 0 auto; width: 850px; }
+	#header { background:#9AE4E8; }
+	#header h1 { padding: 5px;margin: 0;color: #FFFFFF;}
+	#content { border: solid 1px #94a9F6; }
+	
+	#main { background: white; border-right: solid 1px #64D996;	padding:20px; float: left; width: 560px; }
+	#sidebar { background:#DDFFCC; float:right; width:240px; padding-top:60px;}
+	#sidebar ul { margin-bottom:0; }
+    #sidebar h3, #sidebar p { padding:0 0px 0 0; }
+    
+    div.twit { border-top:dashed 1px grey; margin:5px; padding-top:10px; width:90%; display:block;clear:both; }
+    div.error { color:Red; }
+    img.twitPic { width:48px; height:48px; margin:5px; float:left; border:solid 1px grey; }
+    div.twitText { }
+    
+    #latestUpdate { font-size:10px; color:gray; }
+    
+    #loginInfo { margin:20px 20px 20px 20px; }
+    #loginInfo .username { font-weight:bold; }
+    
+    #credits {margin:20px 20px 20px 20px; }
+
+#navcontainer { width: 100%; }
+#navcontainer ul
+{
+margin-left: 0;
+padding-left: 0;
+list-style-type: none;
+}
+
+#navcontainer a
+{
+	display: block;
+	padding: 8px;
+	width: 60%;
+	background-color: #29C6FF;
+	margin-bottom:2px;
+}
+
+#navcontainer a.current
+{
+	display: block;
+	padding: 8px;
+	width: 90%;
+	background-color: #009999;
+	margin-bottom: 2px;
+}
+
+
+#navcontainer a:link, #navlist a:visited
+{
+color: #EEE;
+text-decoration: none;
+}
+
+#navcontainer a:hover
+{
+background-color: #009999;
+color: #fff;
+}

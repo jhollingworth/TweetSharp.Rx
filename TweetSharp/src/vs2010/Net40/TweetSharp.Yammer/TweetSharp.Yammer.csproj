@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C477057B-500B-4D9F-B7E1-8306538714F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TweetSharp.Yammer</RootNamespace>
+    <AssemblyName>TweetSharp.Yammer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <ApplicationIcon>assembly.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\net40\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\net40\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>..\..\..\..\bin\net40\TweetSharp.Yammer.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Hammock, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\net40\Hammock.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Extensions.cs" />
+    <Compile Include="Core\ServiceError.cs" />
+    <Compile Include="Model\YammerAttachmentFile.cs" />
+    <Compile Include="Model\YammerModelSerializer.cs" />
+    <Compile Include="Extensions\YammerExtensions.Model.cs" />
+    <Compile Include="Extensions\YammerExtensions.Xml.cs" />
+    <Compile Include="Fluent\Authentication\FluentYammerAuthentication.cs" />
+    <Compile Include="Fluent\Authentication\IFluentYammerAuthentication.cs" />
+    <Compile Include="Fluent\AutoComplete\IYammerAutoComplete.cs" />
+    <Compile Include="Fluent\AutoComplete\YammerAutocomplete.cs" />
+    <Compile Include="Fluent\AutoComplete\YammerAutoCompleteExtensions.cs" />
+    <Compile Include="Fluent\Configuration\FluentYammerConfiguration.cs" />
+    <Compile Include="Fluent\Configuration\Extensions.cs" />
+    <Compile Include="Fluent\Configuration\IFluentYammerConfiguration.cs" />
+    <Compile Include="Fluent\Configuration\RetryOn.cs" />
+    <Compile Include="Fluent\Extensions.cs" />
+    <Compile Include="Fluent\Extensions.Objects.cs" />
+    <Compile Include="Fluent\Extensions.Root.cs" />
+    <Compile Include="Fluent\FluentYammer.cs" />
+    <Compile Include="Fluent\FluentYammerParameters.cs" />
+    <Compile Include="Fluent\GroupMemberships\IYammerGroupMembershipExtensions.cs" />
+    <Compile Include="Fluent\GroupMemberships\IYammerGroupMemberships.cs" />
+    <Compile Include="Fluent\GroupMemberships\Join\IYammerGroupMembershipJoin.cs" />
+    <Compile Include="Fluent\GroupMemberships\Join\YammerGroupMembershipJoin.cs" />
+    <Compile Include="Fluent\GroupMemberships\Leave\IYammerGroupMembershipLeave.cs" />
+    <Compile Include="Fluent\GroupMemberships\Leave\YammerGroupMembershipLeave.cs" />
+    <Compile Include="Fluent\GroupMemberships\YammerGroupMemberships.cs" />
+    <Compile Include="Fluent\Groups\Create\IYammerGroupsCreate.cs" />
+    <Compile Include="Fluent\Groups\Create\YammerGroupsCreate.cs" />
+    <Compile Include="Fluent\Groups\IYammerGroups.cs" />
+    <Compile Include="Fluent\Groups\IYammerGroupsExtensions.cs" />
+    <Compile Include="Fluent\Groups\SortedBy\IYammerGroupSortedExtensions.cs" />
+    <Compile Include="Fluent\Groups\SortedBy\IYammerGroupsSorted.cs" />
+    <Compile Include="Fluent\Groups\SortedBy\YammerGroupsSorted.cs" />
+    <Compile Include="Fluent\Groups\Update\IYammerGroupsUpdate.cs" />
+    <Compile Include="Fluent\Groups\Update\IYammerGroupsUpdateExtensions.cs" />
+    <Compile Include="Fluent\Groups\Update\YammerGroupsUpdate.cs" />
+    <Compile Include="Fluent\Groups\YammerGroups.cs" />
+    <Compile Include="Fluent\IFluentYammer.cs" />
+    <Compile Include="Fluent\IFluentYammerParameters.cs" />
+    <Compile Include="Fluent\Invitations\Invite\IYammerInvitationsInvite.cs" />
+    <Compile Include="Fluent\Invitations\Invite\YammerInvitationsInvite.cs" />
+    <Compile Include="Fluent\Invitations\IYammerInvitations.cs" />
+    <Compile Include="Fluent\Invitations\YammerInvitationExtensions.cs" />
+    <Compile Include="Fluent\Invitations\YammerInvitations.cs" />
+    <Compile Include="Fluent\IYammerLeafNode.cs" />
+    <Compile Include="Fluent\IYammerLeafNodeAll.cs" />
+    <Compile Include="Fluent\IYammerLeafNodeJson.cs" />
+    <Compile Include="Fluent\IYammerLeafNodeXml.cs" />
+    <Compile Include="Fluent\IYammerLeafNodeXmlJson.cs" />
+    <Compile Include="Fluent\IYammerNode.cs" />
+    <Compile Include="Fluent\Messages\AllMessages\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Messages\AllMessages\IYammerAllMessages.cs" />
+    <Compile Include="Fluent\Messages\AllMessages\YammerAllMessages.cs" />
+    <Compile Include="Fluent\Messages\Delete\IYammerMessageDelete.cs" />
+    <Compile Include="Fluent\Messages\Delete\YammerMessageDelete.cs" />
+    <Compile Include="Fluent\Messages\Favorites\Create\IYammerFavoritesCreate.cs" />
+    <Compile Include="Fluent\Messages\Favorites\Create\YammerFavoritesCreate.cs" />
+    <Compile Include="Fluent\Messages\Favorites\Destroy\IYammerFavoritesDestroy.cs" />
+    <Compile Include="Fluent\Messages\Favorites\Destroy\YammerFavoritesDestroy.cs" />
+    <Compile Include="Fluent\Messages\Favorites\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Messages\Favorites\IYammerFavoriteMessages.cs" />
+    <Compile Include="Fluent\Messages\Favorites\IYammerFavoriteMessagesExtensions.cs" />
+    <Compile Include="Fluent\Messages\Favorites\YammerFavoriteMessages.cs" />
+    <Compile Include="Fluent\Messages\FollowingMessages\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Messages\FollowingMessages\IYammerFollowingMessages.cs" />
+    <Compile Include="Fluent\Messages\FollowingMessages\YammerFollowingMessages.cs" />
+    <Compile Include="Fluent\Messages\IYammerMessages.cs" />
+    <Compile Include="Fluent\Messages\IYammerMessagesExtensions.cs" />
+    <Compile Include="Fluent\Messages\MessagesFromBot\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Messages\MessagesFromBot\IYammerMessagesFromBot.cs" />
+    <Compile Include="Fluent\Messages\MessagesFromBot\YammerMessagesFromBot.cs" />
+    <Compile Include="Fluent\Messages\MessagesFromUser\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Messages\MessagesFromUser\IYammerMessagesFromUser.cs" />
+    <Compile Include="Fluent\Messages\MessagesFromUser\YammerMessagesFromUser.cs" />
+    <Compile Include="Fluent\Messages\MessagesInGroup\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Messages\MessagesInGroup\IYammerMessagesInGroup.cs" />
+    <Compile Include="Fluent\Messages\MessagesInGroup\YammerMessagesInGroup.cs" />
+    <Compile Include="Fluent\Messages\MessagesInThread\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Messages\MessagesInThread\IYammerMessagesInThread.cs" />
+    <Compile Include="Fluent\Messages\MessagesInThread\YammerMessagesInThread.cs" />
+    <Compile Include="Fluent\Messages\MessagesWithTag\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Messages\MessagesWithTag\IYammerMessagesWithTag.cs" />
+    <Compile Include="Fluent\Messages\MessagesWithTag\YammerMessagesWithTag.cs" />
+    <Compile Include="Fluent\Messages\Post\Extensions.Messages.cs" />
+    <Compile Include="Fluent\Messages\Post\IYammerMessagePost.cs" />
+    <Compile Include="Fluent\Messages\Post\YammerMessagePost.cs" />
+    <Compile Include="Fluent\Messages\ReceivedMessages\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Messages\ReceivedMessages\IYammerReceivedMessages.cs" />
+    <Compile Include="Fluent\Messages\ReceivedMessages\YammerReceivedMessages.cs" />
+    <Compile Include="Fluent\Messages\SentMessages\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Messages\SentMessages\IYammerSentMessages.cs" />
+    <Compile Include="Fluent\Messages\SentMessages\YammerSentMessages.cs" />
+    <Compile Include="Fluent\Messages\YammerMessages.cs" />
+    <Compile Include="Fluent\Networks\Accessible\IYammerNetworksAccessible.cs" />
+    <Compile Include="Fluent\Networks\Accessible\YammerNetworksAccessible.cs" />
+    <Compile Include="Fluent\Networks\IYammerNetworks.cs" />
+    <Compile Include="Fluent\Networks\YammerNetworks.cs" />
+    <Compile Include="Fluent\Networks\YammerNetworksExtensions.cs" />
+    <Compile Include="Fluent\Relationships\Create\IYammerRelationshipCreate.cs" />
+    <Compile Include="Fluent\Relationships\Create\YammerRelationshipCreate.cs" />
+    <Compile Include="Fluent\Relationships\Destroy\IYammerRelationshipDestroy.cs" />
+    <Compile Include="Fluent\Relationships\Destroy\YammerRelationshipDestroy.cs" />
+    <Compile Include="Fluent\Relationships\IYammerRelationships.cs" />
+    <Compile Include="Fluent\Relationships\IYammerRelationshipsExtensions.cs" />
+    <Compile Include="Fluent\Relationships\Show\IYammerRelationshipsShow.cs" />
+    <Compile Include="Fluent\Relationships\Show\YammerRelationshipsShow.cs" />
+    <Compile Include="Fluent\Relationships\YammerRelationships.cs" />
+    <Compile Include="Fluent\Search\ForContent\Extensions.Paging.cs" />
+    <Compile Include="Fluent\Search\ForContent\IYammerSearchForContent.cs" />
+    <Compile Include="Fluent\Search\ForContent\YammerSearchForContent.cs" />
+    <Compile Include="Fluent\Search\IYammerSearch.cs" />
+    <Compile Include="Fluent\Search\YammerSearch.cs" />
+    <Compile Include="Fluent\Search\YammerSearchExtensions.cs" />
+    <Compile Include="Fluent\Subscriptions\IYammerSubscriptions.cs" />
+    <Compile Include="Fluent\Subscriptions\IYammerSusbcriptionsExtensions.cs" />
+    <Compile Include="Fluent\Subscriptions\Subscribe\IYammerSubscriptionCreate.cs" />
+    <Compile Include="Fluent\Subscriptions\Subscribe\YammerSubscriptionCreate.cs" />
+    <Compile Include="Fluent\Subscriptions\ToTag\IYammerSubscriptionsToTag.cs" />
+    <Compile Include="Fluent\Subscriptions\ToTag\YammerSubscriptionsToTag.cs" />
+    <Compile Include="Fluent\Subscriptions\ToUser\IYammerSubscriptionsToUser.cs" />
+    <Compile Include="Fluent\Subscriptions\ToUser\YammerSubscriptionsToUser.cs" />
+    <Compile Include="Fluent\Subscriptions\Unsubscribe\IYammerSubscriptionDelete.cs" />
+    <Compile Include="Fluent\Subscriptions\Unsubscribe\YammerSubscriptionDelete.cs" />
+    <Compile Include="Fluent\Subscriptions\YammerSubscriptions.cs" />
+    <Compile Include="Fluent\Suggestions\All\IYammerSuggestionsAll.cs" />
+    <Compile Include="Fluent\Suggestions\All\YammerSuggestionsAll.cs" />
+    <Compile Include="Fluent\Suggestions\Decline\IYammerSuggestionsDecline.cs" />
+    <Compile Include="Fluent\Suggestions\Decline\YammerSuggestionDecline.cs" />
+    <Compile Include="Fluent\Suggestions\Groups\IYammerSuggestionsGroups.cs" />
+    <Compile Include="Fluent\Suggestions\Groups\YammerSuggestionsGroups.cs" />
+    <Compile Include="Fluent\Suggestions\IYammerSuggestions.cs" />
+    <Compile Include="Fluent\Suggestions\IYammerSuggestionsExtensions.cs" />
+    <Compile Include="Fluent\Suggestions\Users\IYammerSuggestionsUsers.cs" />
+    <Compile Include="Fluent\Suggestions\Users\YammerSuggestionsUsers.cs" />
+    <Compile Include="Fluent\Suggestions\YammerSuggestions.cs" />
+    <Compile Include="Fluent\Tags\All\IYammerTagsAll.cs" />
+    <Compile Include="Fluent\Tags\All\YammerTagsAll.cs" />
+    <Compile Include="Fluent\Tags\Get\IYammerTagsGet.cs" />
+    <Compile Include="Fluent\Tags\Get\YammerTagsGet.cs" />
+    <Compile Include="Fluent\Tags\IYammerTags.cs" />
+    <Compile Include="Fluent\Tags\YammerTags.cs" />
+    <Compile Include="Fluent\Tags\YammerTagsExtensions.cs" />
+    <Compile Include="Fluent\Users\ByEmail\IYammerUsersByEmail.cs" />
+    <Compile Include="Fluent\Users\ByEmail\YammerUsersByEmail.cs" />
+    <Compile Include="Fluent\Users\Create\IYammerUsersCreate.cs" />
+    <Compile Include="Fluent\Users\Create\YammerUsersCreate.cs" />
+    <Compile Include="Fluent\Users\Get\IYammerUsersGet.cs" />
+    <Compile Include="Fluent\Users\Get\YammerUsersGet.cs" />
+    <Compile Include="Fluent\Users\IYammerUsers.cs" />
+    <Compile Include="Fluent\Users\Sorted\IYammerUsersSorted.cs" />
+    <Compile Include="Fluent\Users\Sorted\IYammerUsersSortedExtensions.cs" />
+    <Compile Include="Fluent\Users\Sorted\YammerUsersSorted.cs" />
+    <Compile Include="Fluent\Users\Update\IYammerUsersUpdate.cs" />
+    <Compile Include="Fluent\Users\Update\YammerUsersUpdate.cs" />
+    <Compile Include="Fluent\Users\YammerUsers.cs" />
+    <Compile Include="Fluent\Users\YammerUsersExtensions.cs" />
+    <Compile Include="Fluent\YammerClientInfo.cs" />
+    <Compile Include="Fluent\YammerLeafNodeBase.cs" />
+    <Compile Include="Fluent\YammerNodeBase.cs" />
+    <Compile Include="Fluent\YammerWebCallback.cs" />
+    <Compile Include="Model\Converters\YammerDateConverter.cs" />
+    <Compile Include="Model\Converters\YammerXmlNodeConverter.cs" />
+    <Compile Include="Model\IYammerModel.cs" />
+    <Compile Include="Model\YammerAttachment.cs" />
+    <Compile Include="Model\YammerAttachmentContent.cs" />
+    <Compile Include="Model\YammerAttachmentImage.cs" />
+    <Compile Include="Model\YammerAttachmentType.cs" />
+    <Compile Include="Model\YammerAutoCompleteSuggestions.cs" />
+    <Compile Include="Model\YammerBot.cs" />
+    <Compile Include="Model\YammerContactInfo.cs" />
+    <Compile Include="Model\YammerEmailAddress.cs" />
+    <Compile Include="Model\YammerError.cs" />
+    <Compile Include="Model\YammerExternalUrl.cs" />
+    <Compile Include="Model\YammerGroup.cs" />
+    <Compile Include="Model\YammerGroupStats.cs" />
+    <Compile Include="Model\YammerGuideReference.cs" />
+    <Compile Include="Model\YammerImInfo.cs" />
+    <Compile Include="Model\YammerMessage.cs" />
+    <Compile Include="Model\YammerMessageBody.cs" />
+    <Compile Include="Model\YammerMessageReference.cs" />
+    <Compile Include="Model\YammerMessageType.cs" />
+    <Compile Include="Model\YammerNetwork.cs" />
+    <Compile Include="Model\YammerNetworkDomain.cs" />
+    <Compile Include="Model\YammerObjectBase.cs" />
+    <Compile Include="Model\YammerPhoneNumber.cs" />
+    <Compile Include="Model\YammerPreviousCompany.cs" />
+    <Compile Include="Model\YammerRelationships.cs" />
+    <Compile Include="Model\YammerResponseMetadata.cs" />
+    <Compile Include="Model\YammerResult.cs" />
+    <Compile Include="Model\YammerSchool.cs" />
+    <Compile Include="Model\YammerSearchResults.cs" />
+    <Compile Include="Model\YammerSenderType.cs" />
+    <Compile Include="Model\YammerSubscription.cs" />
+    <Compile Include="Model\YammerSuggestions.cs" />
+    <Compile Include="Model\YammerTag.cs" />
+    <Compile Include="Model\YammerTagReference.cs" />
+    <Compile Include="Model\YammerThread.cs" />
+    <Compile Include="Model\YammerThreadReference.cs" />
+    <Compile Include="Model\YammerThreadStats.cs" />
+    <Compile Include="Model\YammerUser.cs" />
+    <Compile Include="Model\YammerUserReference.cs" />
+    <Compile Include="Model\YammerUserStats.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\YammerService.cs" />
+    <Compile Include="Service\YammerService.Rest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TweetSharp\TweetSharp.csproj">
+      <Project>{A0408FE9-6EEA-40D2-AAF6-1D3B1D3244AF}</Project>
+      <Name>TweetSharp %28Net40\Core\TweetSharp%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assembly.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

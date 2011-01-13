@@ -1,0 +1,5 @@
+C:\src\TweetSharp\src\vs2010\Demo.Silverlight.Web\bin\debug\Demo.Silverlight.Web.dll
+C:\src\TweetSharp\src\vs2010\Demo.Silverlight.Web\bin\debug\Demo.Silverlight.Web.pdb
+C:\src\TweetSharp\src\vs2010\Demo.Silverlight.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\src\TweetSharp\src\vs2010\Demo.Silverlight.Web\obj\Debug\Demo.Silverlight.Web.dll
+C:\src\TweetSharp\src\vs2010\Demo.Silverlight.Web\obj\Debug\Demo.Silverlight.Web.pdb

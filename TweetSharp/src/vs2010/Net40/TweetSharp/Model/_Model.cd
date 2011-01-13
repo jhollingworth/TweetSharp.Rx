@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TweetSharp.Model.GeoLocation">
+    <Position X="3.25" Y="2.25" Width="2.25" />
+    <NestedTypes>
+      <Class Name="TweetSharp.Model.GeoLocation.GeoCoordinates" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\GeoLocation.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAEAIAAQAgAAIAAAAIAAAAIAAAQAAAAEAAiA=</HashCode>
+      <FileName>Model\GeoLocation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

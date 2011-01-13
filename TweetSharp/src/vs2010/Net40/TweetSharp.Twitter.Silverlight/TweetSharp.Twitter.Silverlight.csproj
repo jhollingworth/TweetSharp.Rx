@@ -1,0 +1,1152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DE71E47-066F-43E8-B5C8-0E08DC6EBE29}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TweetSharp.Twitter.Silverlight</RootNamespace>
+    <AssemblyName>TweetSharp.Twitter.Silverlight</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\net40\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT,SL4</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\net40\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT,SL4</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Hammock.Silverlight">
+      <HintPath>..\..\..\..\lib\net40\Hammock.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json.Silverlight">
+      <HintPath>..\..\..\..\lib\Newtonsoft.Json.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\tweetsharp.twitter\core\Extensions.cs">
+      <Link>Core\Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\core\FailWhale.cs">
+      <Link>Core\FailWhale.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\core\ServiceError.cs">
+      <Link>Core\ServiceError.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\extensions\TwitterExtensions.Filters.cs">
+      <Link>Extensions\TwitterExtensions.Filters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\extensions\TwitterExtensions.Geo.cs">
+      <Link>Extensions\TwitterExtensions.Geo.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\extensions\TwitterExtensions.Model.cs">
+      <Link>Extensions\TwitterExtensions.Model.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\endsession\ITwitterAccountEndSession.cs">
+      <Link>Fluent\Account\EndSession\ITwitterAccountEndSession.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\endsession\TwitterAccountEndSession.cs">
+      <Link>Fluent\Account\EndSession\TwitterAccountEndSession.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Fluent\Account\ITwitterAccount.cs">
+      <Link>Fluent\Account\ITwitterAccount.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Fluent\Account\ITwitterAccountExtensions.cs">
+      <Link>Fluent\Account\ITwitterAccountExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\ratelimitstatus\ITwitterAccountRateLimitStatus.cs">
+      <Link>Fluent\Account\RateLimitStatus\ITwitterAccountRateLimitStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\ratelimitstatus\TwitterAccountRateLimitStatus.cs">
+      <Link>Fluent\Account\RateLimitStatus\TwitterAccountRateLimitStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Fluent\Account\TwitterAccount.cs">
+      <Link>Fluent\Account\TwitterAccount.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updatedeliverydevice\ITwitterAccountUpdateDeliveryDevice.cs">
+      <Link>Fluent\Account\UpdateDeliveryDevice\ITwitterAccountUpdateDeliveryDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updatedeliverydevice\TwitterAccountUpdateDeliveryDevice.cs">
+      <Link>Fluent\Account\UpdateDeliveryDevice\TwitterAccountUpdateDeliveryDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updatelocation\ITwitterAccountUpdateLocation.cs">
+      <Link>Fluent\Account\UpdateLocation\ITwitterAccountUpdateLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updatelocation\TwitterAccountUpdateLocation.cs">
+      <Link>Fluent\Account\UpdateLocation\TwitterAccountUpdateLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updateprofilebackgroundimage\ITwitterAccountsUpdateProfileImage.cs">
+      <Link>Fluent\Account\UpdateProfileBackgroundImage\ITwitterAccountsUpdateProfileImage.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updateprofilebackgroundimage\TwitterAccountsUpdateProfileImage.cs">
+      <Link>Fluent\Account\UpdateProfileBackgroundImage\TwitterAccountsUpdateProfileImage.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updateprofilecolors\Extensions.Parameters.cs">
+      <Link>Fluent\Account\UpdateProfileColors\Extensions.Parameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updateprofilecolors\ITwitterAccountUpdateProfileColors.cs">
+      <Link>Fluent\Account\UpdateProfileColors\ITwitterAccountUpdateProfileColors.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updateprofilecolors\TwitterAccountUpdateProfileColors.cs">
+      <Link>Fluent\Account\UpdateProfileColors\TwitterAccountUpdateProfileColors.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updateprofileimage\ITwitterAccountUpdateProfileImage.cs">
+      <Link>Fluent\Account\UpdateProfileImage\ITwitterAccountUpdateProfileImage.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updateprofileimage\TwitterAccountUpdateProfileImage.cs">
+      <Link>Fluent\Account\UpdateProfileImage\TwitterAccountUpdateProfileImage.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updateprofile\Extensions.Parameters.cs">
+      <Link>Fluent\Account\UpdateProfile\Extensions.Parameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updateprofile\ITwitterAccountUpdateProfile.cs">
+      <Link>Fluent\Account\UpdateProfile\ITwitterAccountUpdateProfile.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\updateprofile\TwitterAccountUpdateProfile.cs">
+      <Link>Fluent\Account\UpdateProfile\TwitterAccountUpdateProfile.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\verifycredentials\ITwitterAccountVerifyCredentials.cs">
+      <Link>Fluent\Account\VerifyCredentials\ITwitterAccountVerifyCredentials.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\account\verifycredentials\TwitterAccountVerifyCredentials.cs">
+      <Link>Fluent\Account\VerifyCredentials\TwitterAccountVerifyCredentials.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\authentication\Extensions.cs">
+      <Link>Fluent\Authentication\Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\authentication\FluentTwitterAuthentication.cs">
+      <Link>Fluent\Authentication\FluentTwitterAuthentication.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\authentication\IFluentTwitterAuthentication.cs">
+      <Link>Fluent\Authentication\IFluentTwitterAuthentication.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\create\ITwitterBlocksCreate.cs">
+      <Link>Fluent\Blocks\Create\ITwitterBlocksCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\create\TwitterBlocksCreate.cs">
+      <Link>Fluent\Blocks\Create\TwitterBlocksCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\destroy\ITwitterBlocksDestroy.cs">
+      <Link>Fluent\Blocks\Destroy\ITwitterBlocksDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\destroy\TwitterBlocksDestroy.cs">
+      <Link>Fluent\Blocks\Destroy\TwitterBlocksDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\exists\ITwitterBlocksExists.cs">
+      <Link>Fluent\Blocks\Exists\ITwitterBlocksExists.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\exists\TwitterBlocksExists.cs">
+      <Link>Fluent\Blocks\Exists\TwitterBlocksExists.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\ITwitterBlocks.cs">
+      <Link>Fluent\Blocks\ITwitterBlocks.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\ITwitterBlocksExtensions.cs">
+      <Link>Fluent\Blocks\ITwitterBlocksExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\list\Extensions.Paging.cs">
+      <Link>Fluent\Blocks\List\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\list\ITwitterBlocksList.cs">
+      <Link>Fluent\Blocks\List\ITwitterBlocksList.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\list\ITwitterBlocksListIds.cs">
+      <Link>Fluent\Blocks\List\ITwitterBlocksListIds.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\list\TwitterBlocksList.cs">
+      <Link>Fluent\Blocks\List\TwitterBlocksList.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\list\TwitterBlocksListIds.cs">
+      <Link>Fluent\Blocks\List\TwitterBlocksListIds.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\blocks\TwitterBlocks.cs">
+      <Link>Fluent\Blocks\TwitterBlocks.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\configuration\Extensions.cs">
+      <Link>Fluent\Configuration\Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\configuration\FluentTwitterConfiguration.cs">
+      <Link>Fluent\Configuration\FluentTwitterConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\configuration\IFluentTwitterConfiguration.cs">
+      <Link>Fluent\Configuration\IFluentTwitterConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\configuration\RetryOn.cs">
+      <Link>Fluent\Configuration\RetryOn.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\destroy\Extensions.Methods.cs">
+      <Link>Fluent\DirectMessages\Destroy\Extensions.Methods.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\destroy\ITwitterDirectMessagesDestroy.cs">
+      <Link>Fluent\DirectMessages\Destroy\ITwitterDirectMessagesDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\destroy\TwitterDirectMessagesDestroy.cs">
+      <Link>Fluent\DirectMessages\Destroy\TwitterDirectMessagesDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\ITwitterDirectMessages.cs">
+      <Link>Fluent\DirectMessages\ITwitterDirectMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\ITwitterDirectMessagesExtensions.cs">
+      <Link>Fluent\DirectMessages\ITwitterDirectMessagesExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\new\ITwitterDirectMessagesNew.cs">
+      <Link>Fluent\DirectMessages\New\ITwitterDirectMessagesNew.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\new\TwitterDirectMessagesNew.cs">
+      <Link>Fluent\DirectMessages\New\TwitterDirectMessagesNew.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\received\Extensions.Paging.cs">
+      <Link>Fluent\DirectMessages\Received\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\received\ITwitterDirectMessagesReceived.cs">
+      <Link>Fluent\DirectMessages\Received\ITwitterDirectMessagesReceived.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\received\TwitterDirectMessagesReceived.cs">
+      <Link>Fluent\DirectMessages\Received\TwitterDirectMessagesReceived.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\sent\Extensions.Paging.cs">
+      <Link>Fluent\DirectMessages\Sent\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\sent\ITwitterDirectMessagesSent.cs">
+      <Link>Fluent\DirectMessages\Sent\ITwitterDirectMessagesSent.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\sent\TwitterDirectMessagesSent.cs">
+      <Link>Fluent\DirectMessages\Sent\TwitterDirectMessagesSent.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\directmessages\TwitterDirectMessages.cs">
+      <Link>Fluent\DirectMessages\TwitterDirectMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\direct\FluentTwitterDirect.cs">
+      <Link>Fluent\Direct\FluentTwitterDirect.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\direct\IFluentTwitterDirect.cs">
+      <Link>Fluent\Direct\IFluentTwitterDirect.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\direct\IFluentTwitterDirectExtensions.cs">
+      <Link>Fluent\Direct\IFluentTwitterDirectExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\Extensions.Objects.cs">
+      <Link>Fluent\Extensions.Objects.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\Extensions.Root.cs">
+      <Link>Fluent\Extensions.Root.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\favorites\create\ITwitterFavoritesCreate.cs">
+      <Link>Fluent\Favorites\Create\ITwitterFavoritesCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\favorites\create\TwitterFavoritesCreate.cs">
+      <Link>Fluent\Favorites\Create\TwitterFavoritesCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\favorites\destroy\ITwitterFavoritesDestroy.cs">
+      <Link>Fluent\Favorites\Destroy\ITwitterFavoritesDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\favorites\destroy\TwitterFavoritesDestroy.cs">
+      <Link>Fluent\Favorites\Destroy\TwitterFavoritesDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\favorites\get\Extensions.Paging.cs">
+      <Link>Fluent\Favorites\Get\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\favorites\get\ITwitterFavoritesGet.cs">
+      <Link>Fluent\Favorites\Get\ITwitterFavoritesGet.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\favorites\get\TwitterFavoritesGet.cs">
+      <Link>Fluent\Favorites\Get\TwitterFavoritesGet.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\favorites\ITwitterFavorites.cs">
+      <Link>Fluent\Favorites\ITwitterFavorites.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\favorites\ITwitterFavoritesExtensions.cs">
+      <Link>Fluent\Favorites\ITwitterFavoritesExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\favorites\TwitterFavorites.cs">
+      <Link>Fluent\Favorites\TwitterFavorites.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\FluentTwitter.cs">
+      <Link>Fluent\FluentTwitter.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\FluentTwitterParameters.cs">
+      <Link>Fluent\FluentTwitterParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\FluentTwitterProfile.cs">
+      <Link>Fluent\FluentTwitterProfile.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\FluentTwitterSearchParameters.cs">
+      <Link>Fluent\FluentTwitterSearchParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\FluentTwitterStreamingParameters.cs">
+      <Link>Fluent\FluentTwitterStreamingParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\FluentTwitterTrendsParameters.cs">
+      <Link>Fluent\FluentTwitterTrendsParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\create\Extensions.Optional.cs">
+      <Link>Fluent\Friendships\Create\Extensions.Optional.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\create\ITwitterFriendshipsCreate.cs">
+      <Link>Fluent\Friendships\Create\ITwitterFriendshipsCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\create\TwitterFriendshipsCreate.cs">
+      <Link>Fluent\Friendships\Create\TwitterFriendshipsCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\destroy\Extensions.Methods.cs">
+      <Link>Fluent\Friendships\Destroy\Extensions.Methods.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\destroy\ITwitterFriendshipsDestroy.cs">
+      <Link>Fluent\Friendships\Destroy\ITwitterFriendshipsDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\destroy\TwitterFriendshipsDestroy.cs">
+      <Link>Fluent\Friendships\Destroy\TwitterFriendshipsDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\exists\Extensions.Required.cs">
+      <Link>Fluent\Friendships\Exists\Extensions.Required.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\exists\ITwitterFriendshipsExists.cs">
+      <Link>Fluent\Friendships\Exists\ITwitterFriendshipsExists.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\exists\TwitterFriendshipsExists.cs">
+      <Link>Fluent\Friendships\Exists\TwitterFriendshipsExists.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Fluent\Friendships\Incoming\Extensions.Paging.cs">
+      <Link>Fluent\Friendships\Incoming\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Fluent\Friendships\Incoming\ITwitterFriendshipsIncoming.cs">
+      <Link>Fluent\Friendships\Incoming\ITwitterFriendshipsIncoming.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Fluent\Friendships\Incoming\TwitterFriendshipsIncoming.cs">
+      <Link>Fluent\Friendships\Incoming\TwitterFriendshipsIncoming.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\ITwitterFriendships.cs">
+      <Link>Fluent\Friendships\ITwitterFriendships.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\ITwitterFriendshipsExtensions.cs">
+      <Link>Fluent\Friendships\ITwitterFriendshipsExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Fluent\Friendships\Outgoing\Extensions.Paging.cs">
+      <Link>Fluent\Friendships\Outgoing\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Fluent\Friendships\Outgoing\ITwitterFriendshipsOutgoing.cs">
+      <Link>Fluent\Friendships\Outgoing\ITwitterFriendshipsOutgoing.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Fluent\Friendships\Outgoing\TwitterFriendshipsOutgoing.cs">
+      <Link>Fluent\Friendships\Outgoing\TwitterFriendshipsOutgoing.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\show\Extensions.Required.cs">
+      <Link>Fluent\Friendships\Show\Extensions.Required.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\show\ITwitterFriendshipsShow.cs">
+      <Link>Fluent\Friendships\Show\ITwitterFriendshipsShow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\show\TwitterFriendshipsShow.cs">
+      <Link>Fluent\Friendships\Show\TwitterFriendshipsShow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\friendships\TwitterFriendships.cs">
+      <Link>Fluent\Friendships\TwitterFriendships.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\help\downtimeschedule\ITwitterHelpDowntimeSchedule.cs">
+      <Link>Fluent\Help\DowntimeSchedule\ITwitterHelpDowntimeSchedule.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\help\downtimeschedule\TwitterHelpDowntimeSchedule.cs">
+      <Link>Fluent\Help\DowntimeSchedule\TwitterHelpDowntimeSchedule.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\help\ITwitterHelp.cs">
+      <Link>Fluent\Help\ITwitterHelp.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\help\ITwitterHelpExtensions.cs">
+      <Link>Fluent\Help\ITwitterHelpExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\help\test\ITwitterHelpTest.cs">
+      <Link>Fluent\Help\Test\ITwitterHelpTest.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\help\test\TwitterHelpTest.cs">
+      <Link>Fluent\Help\Test\TwitterHelpTest.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\help\TwitterHelp.cs">
+      <Link>Fluent\Help\TwitterHelp.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\IFluentTwitter.cs">
+      <Link>Fluent\IFluentTwitter.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\IFluentTwitterParameters.cs">
+      <Link>Fluent\IFluentTwitterParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\IFluentTwitterProfile.cs">
+      <Link>Fluent\IFluentTwitterProfile.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\IFluentTwitterSearchParameters.cs">
+      <Link>Fluent\IFluentTwitterSearchParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\IFluentTwitterStreamingParameters.cs">
+      <Link>Fluent\IFluentTwitterStreamingParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\IFluentTwitterTrendsParameters.cs">
+      <Link>Fluent\IFluentTwitterTrendsParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\ITwitterLeafNode.cs">
+      <Link>Fluent\ITwitterLeafNode.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\ITwitterLeafNodeAll.cs">
+      <Link>Fluent\ITwitterLeafNodeAll.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\ITwitterLeafNodeAtom.cs">
+      <Link>Fluent\ITwitterLeafNodeAtom.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\ITwitterLeafNodeJson.cs">
+      <Link>Fluent\ITwitterLeafNodeJson.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\ITwitterLeafNodeRss.cs">
+      <Link>Fluent\ITwitterLeafNodeRss.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\ITwitterLeafNodeSyndicates.cs">
+      <Link>Fluent\ITwitterLeafNodeSyndicates.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\ITwitterLeafNodeXml.cs">
+      <Link>Fluent\ITwitterLeafNodeXml.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\ITwitterLeafNodeXmlJson.cs">
+      <Link>Fluent\ITwitterLeafNodeXmlJson.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\ITwitterLeafNodeXmlJsonAtom.cs">
+      <Link>Fluent\ITwitterLeafNodeXmlJsonAtom.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\ITwitterNode.cs">
+      <Link>Fluent\ITwitterNode.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\create\ITwitterListsCreate.cs">
+      <Link>Fluent\Lists\Create\ITwitterListsCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\create\TwitterListsCreate.cs">
+      <Link>Fluent\Lists\Create\TwitterListsCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\delete\ITwitterListsDelete.cs">
+      <Link>Fluent\Lists\Delete\ITwitterListsDelete.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\delete\TwitterListsDelete.cs">
+      <Link>Fluent\Lists\Delete\TwitterListsDelete.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\get\Extensions.Paging.cs">
+      <Link>Fluent\Lists\Get\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\get\ITwitterListsGet.cs">
+      <Link>Fluent\Lists\Get\ITwitterListsGet.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\get\TwitterListsGet.cs">
+      <Link>Fluent\Lists\Get\TwitterListsGet.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\ismember\ITwitterListsIsMember.cs">
+      <Link>Fluent\Lists\IsMember\ITwitterListsIsMember.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\ismember\TwitterListsIsMember.cs">
+      <Link>Fluent\Lists\IsMember\TwitterListsIsMember.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\issubscriber\ITwitterListsIsMember.cs">
+      <Link>Fluent\Lists\IsSubscriber\ITwitterListsIsMember.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\issubscriber\TwitterListsIsMember.cs">
+      <Link>Fluent\Lists\IsSubscriber\TwitterListsIsMember.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\ITwitterLists.cs">
+      <Link>Fluent\Lists\ITwitterLists.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\ITwitterListsExtensions.cs">
+      <Link>Fluent\Lists\ITwitterListsExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\memberships\Extensions.Cursors.cs">
+      <Link>Fluent\Lists\Memberships\Extensions.Cursors.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\memberships\ITwitterListsMemberships.cs">
+      <Link>Fluent\Lists\Memberships\ITwitterListsMemberships.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\memberships\TwitterListsMemberships.cs">
+      <Link>Fluent\Lists\Memberships\TwitterListsMemberships.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\members\create\ITwitterListsMembersCreate.cs">
+      <Link>Fluent\Lists\Members\Create\ITwitterListsMembersCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\members\create\TwitterListsMembersCreate.cs">
+      <Link>Fluent\Lists\Members\Create\TwitterListsMembersCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\members\delete\ITwitterListMembersDelete.cs">
+      <Link>Fluent\Lists\Members\Delete\ITwitterListMembersDelete.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\members\delete\TwitterListMembersDelete.cs">
+      <Link>Fluent\Lists\Members\Delete\TwitterListMembersDelete.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\members\Extensions.Cursors.cs">
+      <Link>Fluent\Lists\Members\Extensions.Cursors.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\members\ITwitterListsMembers.cs">
+      <Link>Fluent\Lists\Members\ITwitterListsMembers.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\members\TwitterListsMembers.cs">
+      <Link>Fluent\Lists\Members\TwitterListsMembers.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\show\ITwitterListsShow.cs">
+      <Link>Fluent\Lists\Show\ITwitterListsShow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\show\TwitterListsShow.cs">
+      <Link>Fluent\Lists\Show\TwitterListsShow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\statuses\Extensions.Paging.cs">
+      <Link>Fluent\Lists\Statuses\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\statuses\ITwitterListsStatuses.cs">
+      <Link>Fluent\Lists\Statuses\ITwitterListsStatuses.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\statuses\TwitterListsStatuses.cs">
+      <Link>Fluent\Lists\Statuses\TwitterListsStatuses.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\subscribers\create\ITwitterListsSubscribersCreate.cs">
+      <Link>Fluent\Lists\Subscribers\Create\ITwitterListsSubscribersCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\subscribers\create\TwitterListsSubscribersCreate.cs">
+      <Link>Fluent\Lists\Subscribers\Create\TwitterListsSubscribersCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\subscribers\delete\ITwitterListsSubscribersDelete.cs">
+      <Link>Fluent\Lists\Subscribers\Delete\ITwitterListsSubscribersDelete.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\subscribers\delete\TwitterListsSubscribersDelete.cs">
+      <Link>Fluent\Lists\Subscribers\Delete\TwitterListsSubscribersDelete.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\subscribers\Extensions.Cursors.cs">
+      <Link>Fluent\Lists\Subscribers\Extensions.Cursors.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\subscribers\ITwitterListsSubscribers.cs">
+      <Link>Fluent\Lists\Subscribers\ITwitterListsSubscribers.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\subscribers\TwitterListsSubscribers.cs">
+      <Link>Fluent\Lists\Subscribers\TwitterListsSubscribers.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\subscriptions\Extensions.Cursors.cs">
+      <Link>Fluent\Lists\Subscriptions\Extensions.Cursors.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\subscriptions\ITwitterListsSubscriptions.cs">
+      <Link>Fluent\Lists\Subscriptions\ITwitterListsSubscriptions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\subscriptions\TwitterListsSubscriptions.cs">
+      <Link>Fluent\Lists\Subscriptions\TwitterListsSubscriptions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\TwitterLists.cs">
+      <Link>Fluent\Lists\TwitterLists.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\update\ITwitterListsUpdate.cs">
+      <Link>Fluent\Lists\Update\ITwitterListsUpdate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\lists\update\TwitterListsUpdate.cs">
+      <Link>Fluent\Lists\Update\TwitterListsUpdate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\notifications\follow\ITwitterNotificationsFollow.cs">
+      <Link>Fluent\Notifications\Follow\ITwitterNotificationsFollow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\notifications\follow\TwitterNotificationsFollow.cs">
+      <Link>Fluent\Notifications\Follow\TwitterNotificationsFollow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\notifications\ITwitterNotifications.cs">
+      <Link>Fluent\Notifications\ITwitterNotifications.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\notifications\ITwitterNotificationsExtensions.cs">
+      <Link>Fluent\Notifications\ITwitterNotificationsExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\notifications\leave\ITwitterNotificationsLeave.cs">
+      <Link>Fluent\Notifications\Leave\ITwitterNotificationsLeave.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\notifications\leave\TwitterNotificationsLeave.cs">
+      <Link>Fluent\Notifications\Leave\TwitterNotificationsLeave.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\notifications\TwitterNotifications.cs">
+      <Link>Fluent\Notifications\TwitterNotifications.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\reportspam\ITwitterReportSpam.cs">
+      <Link>Fluent\ReportSpam\ITwitterReportSpam.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\reportspam\ITwitterReportSpamExtensions.cs">
+      <Link>Fluent\ReportSpam\ITwitterReportSpamExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\reportspam\reportspammer\ITwitterReportSpamReportSpammer.cs">
+      <Link>Fluent\ReportSpam\ReportSpammer\ITwitterReportSpamReportSpammer.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\reportspam\reportspammer\TwitterReportSpamReportSpammer.cs">
+      <Link>Fluent\ReportSpam\ReportSpammer\TwitterReportSpamReportSpammer.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\reportspam\TwitterReportSpam.cs">
+      <Link>Fluent\ReportSpam\TwitterReportSpam.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\RetweetMode.cs">
+      <Link>Fluent\RetweetMode.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\create\ITwitterSavedSearchesCreate.cs">
+      <Link>Fluent\SavedSearches\Create\ITwitterSavedSearchesCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\create\TwitterSavedSearchesCreate.cs">
+      <Link>Fluent\SavedSearches\Create\TwitterSavedSearchesCreate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\destroy\Extensions.Methods.cs">
+      <Link>Fluent\SavedSearches\Destroy\Extensions.Methods.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\destroy\ITwitterSavedSearchesDestroy.cs">
+      <Link>Fluent\SavedSearches\Destroy\ITwitterSavedSearchesDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\destroy\TwitterSavedSearchesDestroy.cs">
+      <Link>Fluent\SavedSearches\Destroy\TwitterSavedSearchesDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\Extensions.Root.cs">
+      <Link>Fluent\SavedSearches\Extensions.Root.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\ITwitterSavedSearches.cs">
+      <Link>Fluent\SavedSearches\ITwitterSavedSearches.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\ITwitterSavedSearchesExtensions.cs">
+      <Link>Fluent\SavedSearches\ITwitterSavedSearchesExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\received\ITwitterSavedSearchesList.cs">
+      <Link>Fluent\SavedSearches\Received\ITwitterSavedSearchesList.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\received\TwitterSavedSearchesList.cs">
+      <Link>Fluent\SavedSearches\Received\TwitterSavedSearchesList.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\show\ITwitterSavedSearchesShow.cs">
+      <Link>Fluent\SavedSearches\Show\ITwitterSavedSearchesShow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\show\TwitterSavedSearchesShow.cs">
+      <Link>Fluent\SavedSearches\Show\TwitterSavedSearchesShow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\savedsearches\TwitterSavedSearches.cs">
+      <Link>Fluent\SavedSearches\TwitterSavedSearches.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Fluent\SearchResultType.cs">
+      <Link>Fluent\SearchResultType.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\search\ITwitterSearch.cs">
+      <Link>Fluent\Search\ITwitterSearch.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\search\ITwitterSearchExtensions.cs">
+      <Link>Fluent\Search\ITwitterSearchExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\search\query\Extensions.Operators.cs">
+      <Link>Fluent\Search\Query\Extensions.Operators.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\search\query\Extensions.Parameters.cs">
+      <Link>Fluent\Search\Query\Extensions.Parameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\search\query\ITwitterSearchQuery.cs">
+      <Link>Fluent\Search\Query\ITwitterSearchQuery.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\search\query\TwitterSearchQuery.cs">
+      <Link>Fluent\Search\Query\TwitterSearchQuery.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\search\trends\Extensions.Trending.cs">
+      <Link>Fluent\Search\Trends\Extensions.Trending.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\search\trends\ITwitterSearchTrends.cs">
+      <Link>Fluent\Search\Trends\ITwitterSearchTrends.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\search\trends\TwitterSearchTrends.cs">
+      <Link>Fluent\Search\Trends\TwitterSearchTrends.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\search\TwitterSearch.cs">
+      <Link>Fluent\Search\TwitterSearch.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\socialgraph\Extensions.cs">
+      <Link>Fluent\SocialGraph\Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\socialgraph\ids\Extensions.Methods.cs">
+      <Link>Fluent\SocialGraph\Ids\Extensions.Methods.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\socialgraph\ids\Extensions.Paging.cs">
+      <Link>Fluent\SocialGraph\Ids\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\socialgraph\ids\ITwitterSocialGraphIds.cs">
+      <Link>Fluent\SocialGraph\Ids\ITwitterSocialGraphIds.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\socialgraph\ids\TwitterSocialGraphIds.cs">
+      <Link>Fluent\SocialGraph\Ids\TwitterSocialGraphIds.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\socialgraph\ITwitterSocialGraph.cs">
+      <Link>Fluent\SocialGraph\ITwitterSocialGraph.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\socialgraph\ITwitterSocialGraphExtensions.cs">
+      <Link>Fluent\SocialGraph\ITwitterSocialGraphExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\socialgraph\TwitterSocialGraph.cs">
+      <Link>Fluent\SocialGraph\TwitterSocialGraph.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\destroy\Extensions.Methods.cs">
+      <Link>Fluent\Statuses\Destroy\Extensions.Methods.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\destroy\ITwitterStatusDestroy.cs">
+      <Link>Fluent\Statuses\Destroy\ITwitterStatusDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\destroy\TwitterStatusDestroy.cs">
+      <Link>Fluent\Statuses\Destroy\TwitterStatusDestroy.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\friendstimeline\Extensions.Paging.cs">
+      <Link>Fluent\Statuses\FriendsTimeline\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\friendstimeline\ITwitterFriendsTimeline.cs">
+      <Link>Fluent\Statuses\FriendsTimeline\ITwitterFriendsTimeline.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\friendstimeline\TwitterFriendsTimeline.cs">
+      <Link>Fluent\Statuses\FriendsTimeline\TwitterFriendsTimeline.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\hometimeline\Extensions.Paging.cs">
+      <Link>Fluent\Statuses\HomeTimeline\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\hometimeline\ITwitterHomeTimeline.cs">
+      <Link>Fluent\Statuses\HomeTimeline\ITwitterHomeTimeline.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\hometimeline\TwitterHomeTimeline.cs">
+      <Link>Fluent\Statuses\HomeTimeline\TwitterHomeTimeline.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\ITwitterStatuses.cs">
+      <Link>Fluent\Statuses\ITwitterStatuses.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\ITwitterStatusesExtensions.cs">
+      <Link>Fluent\Statuses\ITwitterStatusesExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\listtimeline\Extensions.Paging.cs">
+      <Link>Fluent\Statuses\ListTimeline\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\listtimeline\ITwitterFriendsTimeline.cs">
+      <Link>Fluent\Statuses\ListTimeline\ITwitterFriendsTimeline.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\listtimeline\TwitterFriendsTimeline.cs">
+      <Link>Fluent\Statuses\ListTimeline\TwitterFriendsTimeline.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\mentions\Extensions.Paging.cs">
+      <Link>Fluent\Statuses\Mentions\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\mentions\ITwitterStatusMentions.cs">
+      <Link>Fluent\Statuses\Mentions\ITwitterStatusMentions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\mentions\TwitterStatusMentions.cs">
+      <Link>Fluent\Statuses\Mentions\TwitterStatusMentions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\publictimeline\ITwitterPublicTimeline.cs">
+      <Link>Fluent\Statuses\PublicTimeline\ITwitterPublicTimeline.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\publictimeline\TwitterPublicTimeline.cs">
+      <Link>Fluent\Statuses\PublicTimeline\TwitterPublicTimeline.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweetedbyme\Extensions.Paging.cs">
+      <Link>Fluent\Statuses\RetweetedByMe\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweetedbyme\ITwitterRetweetedByMe.cs">
+      <Link>Fluent\Statuses\RetweetedByMe\ITwitterRetweetedByMe.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweetedbyme\TwitterRetweetedByMe.cs">
+      <Link>Fluent\Statuses\RetweetedByMe\TwitterRetweetedByMe.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweetedtome\Extensions.Paging.cs">
+      <Link>Fluent\Statuses\RetweetedToMe\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweetedtome\ITwitterRetweetedToMe.cs">
+      <Link>Fluent\Statuses\RetweetedToMe\ITwitterRetweetedToMe.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweetedtome\TwitterRetweetedToMe.cs">
+      <Link>Fluent\Statuses\RetweetedToMe\TwitterRetweetedToMe.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweetsofme\Extensions.Paging.cs">
+      <Link>Fluent\Statuses\RetweetsOfMe\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweetsofme\ITwitterRetweetsOfMe.cs">
+      <Link>Fluent\Statuses\RetweetsOfMe\ITwitterRetweetsOfMe.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweetsofme\TwitterRetweetsOfMe.cs">
+      <Link>Fluent\Statuses\RetweetsOfMe\TwitterRetweetsOfMe.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweets\Extensions.Paging.cs">
+      <Link>Fluent\Statuses\Retweets\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweets\ITwitterRetweets.cs">
+      <Link>Fluent\Statuses\Retweets\ITwitterRetweets.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\retweets\TwitterRetweets.cs">
+      <Link>Fluent\Statuses\Retweets\TwitterRetweets.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\show\ITwitterStatusShow.cs">
+      <Link>Fluent\Statuses\Show\ITwitterStatusShow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\show\TwitterStatusShow.cs">
+      <Link>Fluent\Statuses\Show\TwitterStatusShow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\TwitterStatuses.cs">
+      <Link>Fluent\Statuses\TwitterStatuses.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\update\Extensions.Messages.cs">
+      <Link>Fluent\Statuses\Update\Extensions.Messages.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\update\ITwitterStatusUpdate.cs">
+      <Link>Fluent\Statuses\Update\ITwitterStatusUpdate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\update\TwitterStatusUpdate.cs">
+      <Link>Fluent\Statuses\Update\TwitterStatusUpdate.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\usertimeline\Extensions.Paging.cs">
+      <Link>Fluent\Statuses\UserTimeline\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\usertimeline\ITwitterUserTimeline.cs">
+      <Link>Fluent\Statuses\UserTimeline\ITwitterUserTimeline.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\statuses\usertimeline\TwitterUserTimeline.cs">
+      <Link>Fluent\Statuses\UserTimeline\TwitterUserTimeline.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\filter\Extensions.Options.cs">
+      <Link>Fluent\Streaming\Filter\Extensions.Options.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\filter\Extensions.Parameters.cs">
+      <Link>Fluent\Streaming\Filter\Extensions.Parameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\filter\ITwitterStreamingFilter.cs">
+      <Link>Fluent\Streaming\Filter\ITwitterStreamingFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\filter\TwitterStreamingFilter.cs">
+      <Link>Fluent\Streaming\Filter\TwitterStreamingFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\firehose\Extensions.Options.cs">
+      <Link>Fluent\Streaming\Firehose\Extensions.Options.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\firehose\Extensions.Parameters.cs">
+      <Link>Fluent\Streaming\Firehose\Extensions.Parameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\firehose\ITwitterStreamingFirehose.cs">
+      <Link>Fluent\Streaming\Firehose\ITwitterStreamingFirehose.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\firehose\TwitterStreamingFirehose.cs">
+      <Link>Fluent\Streaming\Firehose\TwitterStreamingFirehose.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\ITwitterStream.cs">
+      <Link>Fluent\Streaming\ITwitterStream.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\ITwitterStreamExtensions.cs">
+      <Link>Fluent\Streaming\ITwitterStreamExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\retweet\Extensions.Options.cs">
+      <Link>Fluent\Streaming\Retweet\Extensions.Options.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\retweet\Extensions.Parameters.cs">
+      <Link>Fluent\Streaming\Retweet\Extensions.Parameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\retweet\ITwitterStreamingRetweet.cs">
+      <Link>Fluent\Streaming\Retweet\ITwitterStreamingRetweet.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\retweet\TwitterStreamingRetweet.cs">
+      <Link>Fluent\Streaming\Retweet\TwitterStreamingRetweet.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\sample\Extensions.Options.cs">
+      <Link>Fluent\Streaming\Sample\Extensions.Options.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\sample\Extensions.Parameters.cs">
+      <Link>Fluent\Streaming\Sample\Extensions.Parameters.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\sample\ITwitterStreamingSample.cs">
+      <Link>Fluent\Streaming\Sample\ITwitterStreamingSample.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\sample\TwitterStreamingSample.cs">
+      <Link>Fluent\Streaming\Sample\TwitterStreamingSample.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\streaming\TwitterStream.cs">
+      <Link>Fluent\Streaming\TwitterStream.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\trends\available\Extensions.Options.cs">
+      <Link>Fluent\Trends\Available\Extensions.Options.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\trends\available\ITwitterTrendsAvailable.cs">
+      <Link>Fluent\Trends\Available\ITwitterTrendsAvailable.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\trends\available\TwitterTrendsAvailable.cs">
+      <Link>Fluent\Trends\Available\TwitterTrendsAvailable.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\trends\ITwitterTrends.cs">
+      <Link>Fluent\Trends\ITwitterTrends.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\trends\location\ITwitterTrendsLocation.cs">
+      <Link>Fluent\Trends\Location\ITwitterTrendsLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\trends\location\TwitterTrendsLocation.cs">
+      <Link>Fluent\Trends\Location\TwitterTrendsLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\trends\TwitterTrends.cs">
+      <Link>Fluent\Trends\TwitterTrends.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\trends\TwitterTrendsExtensions.cs">
+      <Link>Fluent\Trends\TwitterTrendsExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\TwitterClientInfo.cs">
+      <Link>Fluent\TwitterClientInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\TwitterLeafNodeBase.cs">
+      <Link>Fluent\TwitterLeafNodeBase.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\TwitterNodeBase.cs">
+      <Link>Fluent\TwitterNodeBase.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\TwitterWebCallback.cs">
+      <Link>Fluent\TwitterWebCallback.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\followers\Extensions.Cursors.cs">
+      <Link>Fluent\Users\Followers\Extensions.Cursors.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\followers\Extensions.Paging.cs">
+      <Link>Fluent\Users\Followers\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\followers\ITwitterUserFollowers.cs">
+      <Link>Fluent\Users\Followers\ITwitterUserFollowers.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\followers\TwitterUserFollowers.cs">
+      <Link>Fluent\Users\Followers\TwitterUserFollowers.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\friends\Extensions.Paging.cs">
+      <Link>Fluent\Users\Friends\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\friends\ITwitterUserFriends.cs">
+      <Link>Fluent\Users\Friends\ITwitterUserFriends.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\friends\TwitterUserFriends.cs">
+      <Link>Fluent\Users\Friends\TwitterUserFriends.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\ITwitterUsers.cs">
+      <Link>Fluent\Users\ITwitterUsers.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\ITwitterUsersExtensions.cs">
+      <Link>Fluent\Users\ITwitterUsersExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\lookup\ITwitterUsersLookup.cs">
+      <Link>Fluent\Users\Lookup\ITwitterUsersLookup.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\lookup\TwitterUsersLookup.cs">
+      <Link>Fluent\Users\Lookup\TwitterUsersLookup.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\search\Extensions.Paging.cs">
+      <Link>Fluent\Users\Search\Extensions.Paging.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\search\ITwitterUsersSearch.cs">
+      <Link>Fluent\Users\Search\ITwitterUsersSearch.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\search\TwitterUsersSearch.cs">
+      <Link>Fluent\Users\Search\TwitterUsersSearch.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\show\ITwitterUsersShow.cs">
+      <Link>Fluent\Users\Show\ITwitterUsersShow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\show\TwitterUsersShow.cs">
+      <Link>Fluent\Users\Show\TwitterUsersShow.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\fluent\users\TwitterUsers.cs">
+      <Link>Fluent\Users\TwitterUsers.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\converters\TwitterDateTimeConverter.cs">
+      <Link>Model\Converters\TwitterDateTimeConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\converters\TwitterGeoConverter.cs">
+      <Link>Model\Converters\TwitterGeoConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\converters\TwitterWonkyBooleanConverter.cs">
+      <Link>Model\Converters\TwitterWonkyBooleanConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\ITwitterEntity.cs">
+      <Link>Model\ITwitterEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\ITwitterModel.cs">
+      <Link>Model\ITwitterModel.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterDateFormat.cs">
+      <Link>Model\TwitterDateFormat.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterDateTime.cs">
+      <Link>Model\TwitterDateTime.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterDeliveryDevice.cs">
+      <Link>Model\TwitterDeliveryDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterDirectMessage.cs">
+      <Link>Model\TwitterDirectMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterError.cs">
+      <Link>Model\TwitterError.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterFriend.cs">
+      <Link>Model\TwitterFriend.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterFriendship.cs">
+      <Link>Model\TwitterFriendship.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterGeoLocation.cs">
+      <Link>Model\TwitterGeoLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterList.cs">
+      <Link>Model\TwitterList.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterLocalTrend.cs">
+      <Link>Model\TwitterLocalTrend.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterLocalTrends.cs">
+      <Link>Model\TwitterLocalTrends.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterModelSerializer.cs">
+      <Link>Model\TwitterModelSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterRateLimitStatus.cs">
+      <Link>Model\TwitterRateLimitStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterRelationship.cs">
+      <Link>Model\TwitterRelationship.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterResult.cs">
+      <Link>Model\TwitterResult.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterSavedSearch.cs">
+      <Link>Model\TwitterSavedSearch.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterSearchResult.cs">
+      <Link>Model\TwitterSearchResult.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterSearchStatus.cs">
+      <Link>Model\TwitterSearchStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterSearchTrend.cs">
+      <Link>Model\TwitterSearchTrend.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterSearchTrends.cs">
+      <Link>Model\TwitterSearchTrends.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterStatus.cs">
+      <Link>Model\TwitterStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\model\TwitterUser.cs">
+      <Link>Model\TwitterUser.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\Service\ITwitterService.cs">
+      <Link>Service\ITwitterService.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\service\TwitterCursorList.cs">
+      <Link>Service\TwitterCursorList.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\service\TwitterFilterStreamOptions.cs">
+      <Link>Service\TwitterFilterStreamOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\service\TwitterSearchOptions.cs">
+      <Link>Service\TwitterSearchOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\service\TwitterService.cs">
+      <Link>Service\TwitterService.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\service\TwitterService.Rest.cs">
+      <Link>Service\TwitterService.Rest.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\service\TwitterService.Search.cs">
+      <Link>Service\TwitterService.Search.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\service\TwitterService.Streaming.cs">
+      <Link>Service\TwitterService.Streaming.cs</Link>
+    </Compile>
+    <Compile Include="..\tweetsharp.twitter\service\TwitterStreamResultEventArgs.cs">
+      <Link>Service\TwitterStreamResultEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\TweetSharp.Twitter\TwitterException.cs">
+      <Link>TwitterException.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fluent\Twitter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TweetSharp.Silverlight\TweetSharp.Silverlight.csproj">
+      <Project>{11741E9C-13F0-4639-A2E0-D54967BE15B8}</Project>
+      <Name>TweetSharp.Silverlight %28Net40\Core\TweetSharp.Silverlight%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assembly.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

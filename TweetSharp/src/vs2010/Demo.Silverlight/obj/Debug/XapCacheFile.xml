@@ -1,0 +1,15 @@
+﻿<xapCache source="C:\src\TweetSharp\src\vs2010\Demo.Silverlight\bin\debug\Demo.Silverlight.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="13/01/2011 21:31:19">
+  <file source="C:\src\TweetSharp\src\vs2010\Demo.Silverlight\obj\Debug\Demo.Silverlight.dll" archivePath="Demo.Silverlight.dll" lastWriteTime="13/01/2011 21:31:18" />
+  <file source="C:\src\TweetSharp\bin\net40\TweetSharp.Silverlight.dll" archivePath="TweetSharp.Silverlight.dll" lastWriteTime="13/01/2011 20:27:27" />
+  <file source="C:\src\TweetSharp\bin\net40\TweetSharp.Twitter.Silverlight.dll" archivePath="TweetSharp.Twitter.Silverlight.dll" lastWriteTime="13/01/2011 20:27:35" />
+  <file source="C:\src\TweetSharp\bin\net40\Newtonsoft.Json.Silverlight.dll" archivePath="Newtonsoft.Json.Silverlight.dll" lastWriteTime="13/01/2011 19:44:37" />
+  <file source="C:\src\TweetSharp\bin\net40\Hammock.Silverlight.dll" archivePath="Hammock.Silverlight.dll" lastWriteTime="13/01/2011 19:44:41" />
+  <file source="C:\src\TweetSharp\bin\net40\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="26/08/2010 03:17:48" />
+  <file source="C:\src\TweetSharp\bin\net40\ICSharpCode.SharpZipLib.Silverlight.dll" archivePath="ICSharpCode.SharpZipLib.Silverlight.dll" lastWriteTime="13/01/2011 19:44:41" />
+  <file source="C:\src\TweetSharp\src\vs2010\Demo.Silverlight\Assets\ts_128x128.png" archivePath="Assets\ts_128x128.png" lastWriteTime="13/01/2011 19:45:02" />
+  <file source="C:\src\TweetSharp\src\vs2010\Demo.Silverlight\Assets\ts_16x16.png" archivePath="Assets\ts_16x16.png" lastWriteTime="13/01/2011 19:45:02" />
+  <file source="C:\src\TweetSharp\src\vs2010\Demo.Silverlight\Assets\ts_32x32.png" archivePath="Assets\ts_32x32.png" lastWriteTime="13/01/2011 19:45:03" />
+  <file source="C:\src\TweetSharp\src\vs2010\Demo.Silverlight\Assets\ts_48x48.png" archivePath="Assets\ts_48x48.png" lastWriteTime="13/01/2011 19:45:03" />
+  <file source="C:\src\TweetSharp\src\vs2010\Demo.Silverlight\Properties\OutOfBrowserSettings.xml" archivePath="Properties\OutOfBrowserSettings.xml" lastWriteTime="13/01/2011 19:45:03" />
+  <file source="C:\src\TweetSharp\src\vs2010\Demo.Silverlight\bin\debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="13/01/2011 20:27:44" />
+</xapCache>

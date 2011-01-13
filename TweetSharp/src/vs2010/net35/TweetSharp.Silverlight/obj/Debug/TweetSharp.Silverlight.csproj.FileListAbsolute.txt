@@ -1,0 +1,5 @@
+C:\src\TweetSharp\bin\net35\TweetSharp.Silverlight.dll
+C:\src\TweetSharp\bin\net35\TweetSharp.Silverlight.pdb
+C:\src\TweetSharp\src\vs2010\net35\TweetSharp.Silverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\src\TweetSharp\src\vs2010\net35\TweetSharp.Silverlight\obj\Debug\TweetSharp.Silverlight.dll
+C:\src\TweetSharp\src\vs2010\net35\TweetSharp.Silverlight\obj\Debug\TweetSharp.Silverlight.pdb

@@ -1,0 +1,5 @@
+C:\src\TweetSharp\bin\net35\TweetSharp.Twitter.Extras.dll
+C:\src\TweetSharp\bin\net35\TweetSharp.Twitter.Extras.pdb
+C:\src\TweetSharp\src\vs2010\net35\TweetSharp.Twitter.Extras\obj\Debug\ResolveAssemblyReference.cache
+C:\src\TweetSharp\src\vs2010\net35\TweetSharp.Twitter.Extras\obj\Debug\TweetSharp.Twitter.Extras.dll
+C:\src\TweetSharp\src\vs2010\net35\TweetSharp.Twitter.Extras\obj\Debug\TweetSharp.Twitter.Extras.pdb

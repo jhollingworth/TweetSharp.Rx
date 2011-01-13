@@ -1,0 +1,14 @@
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\Demo.OAuth.Desktop.exe.config
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\Demo.OAuth.Desktop.exe
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\Demo.OAuth.Desktop.pdb
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\TweetSharp.dll
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\TweetSharp.Twitter.dll
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\Hammock.dll
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\Newtonsoft.Json.dll
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\TweetSharp.Twitter.pdb
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\TweetSharp.Twitter.xml
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\TweetSharp.pdb
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\bin\debug\TweetSharp.xml
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\obj\Debug\ResolveAssemblyReference.cache
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\obj\Debug\Demo.OAuth.Desktop.exe
+C:\src\TweetSharp\src\vs2010\Demo.OAuth.Desktop\obj\Debug\Demo.OAuth.Desktop.pdb

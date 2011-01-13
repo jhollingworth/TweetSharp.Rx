@@ -1,0 +1,9 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+   <PropertyGroup>
+     <Configuration>Mono</Configuration>
+   </PropertyGroup>
+   <Target Name="Build">
+        <MSBuild Projects="$(MSBuildProjectDirectory)\TweetSharp\Tweetsharp.csproj"/>
+		<MSBuild Projects="$(MSBuildProjectDirectory)\TweetSharp.Twitter\Tweetsharp.csproj"/>
+   </Target>
+</Project>

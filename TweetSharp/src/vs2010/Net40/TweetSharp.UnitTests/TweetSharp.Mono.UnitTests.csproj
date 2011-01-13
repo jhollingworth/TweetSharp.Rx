@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2868CA03-2BEA-4FC1-B3EC-F3EDACDE2B20}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TweetSharp.UnitTests</RootNamespace>
+    <AssemblyName>TweetSharp.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>assembly.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BaseDirectory>..\..\mono\TweetSharp.Mono.UnitTests\bin</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\mono\TweetSharp.Mono.UnitTests\bin</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\mono\TweetSharp.Mono.UnitTests\bin</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Mono|AnyCPU' ">
+    <OutputPath>..\..\mono\TweetSharp.Mono.UnitTests\bin</OutputPath>
+    <DefineConstants>TRACE;Mono</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TestSetupFile>
+    </TestSetupFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Converter\TwitterDateTimeTests.cs" />
+    <Compile Include="Core\OAuth\OAuthToolsTests.cs" />
+    <Compile Include="Core\OAuth\OAuthWorkflowTests.cs" />
+    <Compile Include="Core\Web\Mocks\WebQueryClientMockTests.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Authentication.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.GeoLocation.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Mocks.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Model.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Retweets.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.SavedSearches.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Services.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.SocialGraph.cs" />
+    <Compile Include="Base\IdenticaTestBase.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Accounts.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Blocks.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Configuration.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.DirectMessages.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Extensions.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Favorites.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Friendships.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Help.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Notifications.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Search.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Requests.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Select.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Statuses.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.TimedTasks.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Users.cs" />
+    <Compile Include="Helpers\TestExtensions.cs" />
+    <Compile Include="Base\OAuthTestBase.cs" />
+    <Compile Include="Base\TestBase.cs" />
+    <Compile Include="Base\TwitterTestBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assembly.ico" />
+    <Content Include="failwhale.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="setup.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="avatar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dimebrain.TweetSharp\TweetSharp.Mono.csproj">
+      <Project>{A0408FE9-6EEA-40D2-AAF6-1D3B1D3244AF}</Project>
+      <Name>TweetSharp.Mono</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\YammerTestBase.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.CarbonCopy.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Streaming.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Trends.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Autocomplete.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Groups.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Invitations.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Networks.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Relationships.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Requests.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Search.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Subscriptions.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Tags.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Users.cs" />
+    <Compile Include="Model\TwitterStatusTests.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Lists.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.RateLimiting.cs" />
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.ReportSpam.cs" />
+    <Content Include="Samples\large-list.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Fluent\Twitter\FluentTwitterTests.Retries.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Authentication.cs" />
+    <Compile Include="Service\TwitterServiceTests.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Messages.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.GroupMemberships.cs" />
+    <Compile Include="Fluent\Yammer\FluentYammerTests.Suggestions.cs" />
+    <None Include="setup.xml.example" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fluent\Identica\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.-->
+  <Target Name="BeforeBuild">
+    <Copy Condition="Exists('$(TestSetupFile)')" SourceFiles="$(TestSetupFile)" DestinationFiles="$(MSBuildProjectDirectory)\setup.xml" />
+  </Target>
+  <!--<Target Name="AfterBuild">
+  </Target>-->
+</Project>

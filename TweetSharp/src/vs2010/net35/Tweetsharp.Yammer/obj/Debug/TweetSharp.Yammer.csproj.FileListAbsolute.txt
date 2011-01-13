@@ -1,0 +1,5 @@
+C:\src\TweetSharp\bin\net35\TweetSharp.Yammer.dll
+C:\src\TweetSharp\bin\net35\TweetSharp.Yammer.pdb
+C:\src\TweetSharp\src\vs2010\net35\Tweetsharp.Yammer\obj\Debug\ResolveAssemblyReference.cache
+C:\src\TweetSharp\src\vs2010\net35\Tweetsharp.Yammer\obj\Debug\TweetSharp.Yammer.dll
+C:\src\TweetSharp\src\vs2010\net35\Tweetsharp.Yammer\obj\Debug\TweetSharp.Yammer.pdb

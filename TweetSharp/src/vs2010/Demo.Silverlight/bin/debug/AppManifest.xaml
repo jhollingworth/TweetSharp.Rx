@@ -1,0 +1,28 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Demo.Silverlight" EntryPointType="Demo.Silverlight.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.OutOfBrowserSettings>
+    <OutOfBrowserSettings ShortName="TweetSharp Silverlight 4 Demo" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+      <OutOfBrowserSettings.Blurb>TweetSharp is short, sweet, and social.</OutOfBrowserSettings.Blurb>
+      <OutOfBrowserSettings.WindowSettings>
+        <WindowSettings Title="TweetSharp Silverlight 4 Demo" />
+      </OutOfBrowserSettings.WindowSettings>
+      <OutOfBrowserSettings.SecuritySettings>
+        <SecuritySettings ElevatedPermissions="Required" />
+      </OutOfBrowserSettings.SecuritySettings>
+      <OutOfBrowserSettings.Icons>
+        <Icon Size="16,16">Assets/ts_16x16.png</Icon>
+        <Icon Size="32,32">Assets/ts_32x32.png</Icon>
+        <Icon Size="48,48">Assets/ts_48x48.png</Icon>
+        <Icon Size="128,128">Assets/ts_128x128.png</Icon>
+      </OutOfBrowserSettings.Icons>
+    </OutOfBrowserSettings>
+  </Deployment.OutOfBrowserSettings>
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Demo.Silverlight" Source="Demo.Silverlight.dll" />
+    <AssemblyPart x:Name="TweetSharp.Silverlight" Source="TweetSharp.Silverlight.dll" />
+    <AssemblyPart x:Name="TweetSharp.Twitter.Silverlight" Source="TweetSharp.Twitter.Silverlight.dll" />
+    <AssemblyPart x:Name="Newtonsoft.Json.Silverlight" Source="Newtonsoft.Json.Silverlight.dll" />
+    <AssemblyPart x:Name="Hammock.Silverlight" Source="Hammock.Silverlight.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="ICSharpCode.SharpZipLib.Silverlight" Source="ICSharpCode.SharpZipLib.Silverlight.dll" />
+  </Deployment.Parts>
+</Deployment>

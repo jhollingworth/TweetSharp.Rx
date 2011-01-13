@@ -1,0 +1,15 @@
+<OutOfBrowserSettings ShortName="TweetSharp Silverlight 4 Demo" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>TweetSharp is short, sweet, and social.</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="TweetSharp Silverlight 4 Demo" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.SecuritySettings>
+    <SecuritySettings ElevatedPermissions="Required" />
+  </OutOfBrowserSettings.SecuritySettings>
+  <OutOfBrowserSettings.Icons>
+    <Icon Size="16,16">Assets/ts_16x16.png</Icon>
+    <Icon Size="32,32">Assets/ts_32x32.png</Icon>
+    <Icon Size="48,48">Assets/ts_48x48.png</Icon>
+    <Icon Size="128,128">Assets/ts_128x128.png</Icon>
+  </OutOfBrowserSettings.Icons>
+</OutOfBrowserSettings>

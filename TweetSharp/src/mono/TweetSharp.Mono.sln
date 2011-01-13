@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSharp", "TweetSharp\TweetSharp.csproj", "{E53CE5C3-6488-4DEA-A263-7AD535B3FA0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSharp.Twitter", "TweetSharp.Twitter\TweetSharp.Twitter.csproj", "{1C9E3CBF-A9AC-40F4-82E0-3EC4E9A5B152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSharp.Yammer", "TweetSharp.Yammer\TweetSharp.Yammer.csproj", "{886B31A6-1CF1-4180-B2C7-37D920E0A7F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Mono|Any CPU = Mono|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C9E3CBF-A9AC-40F4-82E0-3EC4E9A5B152}.Mono|Any CPU.ActiveCfg = Mono|Any CPU
+		{1C9E3CBF-A9AC-40F4-82E0-3EC4E9A5B152}.Mono|Any CPU.Build.0 = Mono|Any CPU
+		{886B31A6-1CF1-4180-B2C7-37D920E0A7F2}.Mono|Any CPU.ActiveCfg = Mono|Any CPU
+		{886B31A6-1CF1-4180-B2C7-37D920E0A7F2}.Mono|Any CPU.Build.0 = Mono|Any CPU
+		{E53CE5C3-6488-4DEA-A263-7AD535B3FA0E}.Mono|Any CPU.ActiveCfg = Mono|Any CPU
+		{E53CE5C3-6488-4DEA-A263-7AD535B3FA0E}.Mono|Any CPU.Build.0 = Mono|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = TweetSharp.Yammer\TweetSharp.Yammer.csproj
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+C:\src\TweetSharp\src\vs2010\Streaming\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\src\TweetSharp\src\vs2010\Streaming\bin\Debug\Streaming.exe.config
+C:\src\TweetSharp\src\vs2010\Streaming\bin\Debug\Streaming.exe
+C:\src\TweetSharp\src\vs2010\Streaming\bin\Debug\Streaming.pdb
+C:\src\TweetSharp\src\vs2010\Streaming\bin\Debug\TweetSharp.dll
+C:\src\TweetSharp\src\vs2010\Streaming\bin\Debug\TweetSharp.Twitter.dll
+C:\src\TweetSharp\src\vs2010\Streaming\bin\Debug\Newtonsoft.Json.dll
+C:\src\TweetSharp\src\vs2010\Streaming\bin\Debug\TweetSharp.Twitter.pdb
+C:\src\TweetSharp\src\vs2010\Streaming\bin\Debug\TweetSharp.Twitter.xml
+C:\src\TweetSharp\src\vs2010\Streaming\bin\Debug\TweetSharp.pdb
+C:\src\TweetSharp\src\vs2010\Streaming\bin\Debug\TweetSharp.xml
+C:\src\TweetSharp\src\vs2010\Streaming\obj\x86\Debug\Streaming.exe
+C:\src\TweetSharp\src\vs2010\Streaming\obj\x86\Debug\Streaming.pdb

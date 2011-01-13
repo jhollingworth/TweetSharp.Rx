@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Mono" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="d:\Projects\hammock\src\net35\Hammock\Caching\IDependencyCache.cs" ctype="Workbench">
+    <Files>
+      <File FileName="..\..\..\hammock\src\mono\Hammock.Mono\MyClass.cs" Line="1" Column="1" />
+      <File FileName="d:\Projects\hammock\src\net35\Hammock\Caching\IDependencyCache.cs" Line="15" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="TweetSharp" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

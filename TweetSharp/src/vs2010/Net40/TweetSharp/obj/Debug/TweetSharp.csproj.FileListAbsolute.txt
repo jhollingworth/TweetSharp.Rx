@@ -1,0 +1,5 @@
+C:\src\TweetSharp\bin\net40\TweetSharp.dll
+C:\src\TweetSharp\bin\net40\TweetSharp.pdb
+C:\src\TweetSharp\src\vs2010\Net40\TweetSharp\obj\Debug\ResolveAssemblyReference.cache
+C:\src\TweetSharp\src\vs2010\Net40\TweetSharp\obj\Debug\TweetSharp.dll
+C:\src\TweetSharp\src\vs2010\Net40\TweetSharp\obj\Debug\TweetSharp.pdb

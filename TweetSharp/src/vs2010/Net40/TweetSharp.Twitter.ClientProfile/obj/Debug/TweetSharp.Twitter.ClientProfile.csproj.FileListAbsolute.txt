@@ -1,0 +1,5 @@
+C:\src\TweetSharp\bin\net40\TweetSharp.Twitter.ClientProfile.dll
+C:\src\TweetSharp\bin\net40\TweetSharp.Twitter.ClientProfile.pdb
+C:\src\TweetSharp\src\vs2010\Net40\TweetSharp.Twitter.ClientProfile\obj\Debug\ResolveAssemblyReference.cache
+C:\src\TweetSharp\src\vs2010\Net40\TweetSharp.Twitter.ClientProfile\obj\Debug\TweetSharp.Twitter.ClientProfile.dll
+C:\src\TweetSharp\src\vs2010\Net40\TweetSharp.Twitter.ClientProfile\obj\Debug\TweetSharp.Twitter.ClientProfile.pdb
