@@ -1,0 +1,9 @@
+C:\src\TweetSharp.Rx\TweetSharp.Rx.Specs\bin\Debug\TweetSharp.Rx.Specs.dll
+C:\src\TweetSharp.Rx\TweetSharp.Rx.Specs\bin\Debug\TweetSharp.Rx.Specs.pdb
+C:\src\TweetSharp.Rx\TweetSharp.Rx.Specs\bin\Debug\Machine.Specifications.dll
+C:\src\TweetSharp.Rx\TweetSharp.Rx.Specs\obj\Debug\ResolveAssemblyReference.cache
+C:\src\TweetSharp.Rx\TweetSharp.Rx.Specs\obj\Debug\TweetSharp.Rx.Specs.Settings.resources
+C:\src\TweetSharp.Rx\TweetSharp.Rx.Specs\obj\Debug\GenerateResource.read.1.tlog
+C:\src\TweetSharp.Rx\TweetSharp.Rx.Specs\obj\Debug\GenerateResource.write.1.tlog
+C:\src\TweetSharp.Rx\TweetSharp.Rx.Specs\obj\Debug\TweetSharp.Rx.Specs.dll
+C:\src\TweetSharp.Rx\TweetSharp.Rx.Specs\obj\Debug\TweetSharp.Rx.Specs.pdb

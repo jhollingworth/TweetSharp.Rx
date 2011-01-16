@@ -1,0 +1,12 @@
+C:\src\TweetSharp.Rx\TweetSharp.Rx\bin\Debug\TweetSharp.Rx.dll
+C:\src\TweetSharp.Rx\TweetSharp.Rx\bin\Debug\TweetSharp.Rx.pdb
+C:\src\TweetSharp.Rx\TweetSharp.Rx\bin\Debug\Newtonsoft.Json.dll
+C:\src\TweetSharp.Rx\TweetSharp.Rx\bin\Debug\Hammock.dll
+C:\src\TweetSharp.Rx\TweetSharp.Rx\bin\Debug\TweetSharp.pdb
+C:\src\TweetSharp.Rx\TweetSharp.Rx\bin\Debug\TweetSharp.Twitter.pdb
+C:\src\TweetSharp.Rx\TweetSharp.Rx\obj\Debug\ResolveAssemblyReference.cache
+C:\src\TweetSharp.Rx\TweetSharp.Rx\obj\Debug\TweetSharp.Rx.dll
+C:\src\TweetSharp.Rx\TweetSharp.Rx\obj\Debug\TweetSharp.Rx.pdb
+C:\src\TweetSharp.Rx\TweetSharp.Rx\bin\Debug\Hammock.pdb
+C:\src\TweetSharp.Rx\TweetSharp.Rx\bin\Debug\TweetSharp.dll
+C:\src\TweetSharp.Rx\TweetSharp.Rx\bin\Debug\TweetSharp.Twitter.dll

@@ -1,0 +1,157 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="d:Miscellaneous Files/f:FluentTwitter.cs/l:C!?src?TweetSharp?src?vs2010?Net40?TweetSharp.Twitter?Fluent?FluentTwitter.cs" caret="13274" fromTop="23" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:ITwitterStreamingUserExtensions.cs" caret="285" fromTop="9" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:ActionDisposable.cs" caret="340" fromTop="18" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:UserStreamMessageObservable.cs" caret="719" fromTop="21" />
+      <File id="D7807481-3D42-423F-953C-9F40BDBAFB2B/f:Program.cs" caret="675" fromTop="24" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="d:Miscellaneous Files/f:FluentTwitter.cs/l:C!?src?TweetSharp?src?vs2010?Net40?TweetSharp.Twitter?Fluent?FluentTwitter.cs" caret="14697" fromTop="15" />
+      <File id="D7807481-3D42-423F-953C-9F40BDBAFB2B/f:Program.cs" caret="663" fromTop="14" />
+      <File id="d:Miscellaneous Files/f:FluentTwitter.cs/l:C!?src?TweetSharp?src?vs2010?Net40?TweetSharp.Twitter?Fluent?FluentTwitter.cs" caret="13244" fromTop="22" />
+      <File id="D7807481-3D42-423F-953C-9F40BDBAFB2B/f:Program.cs" caret="932" fromTop="22" />
+      <File id="D7807481-3D42-423F-953C-9F40BDBAFB2B/f:Program.cs" caret="663" fromTop="19" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:ITwitterStreamingUserExtensions.cs" caret="182" fromTop="7" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:UserStreamMessageObservable.cs" caret="334" fromTop="9" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:UserStreamMessageObservable.cs" caret="1020" fromTop="32" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:UserStreamMessageObservable.cs" caret="1020" fromTop="39" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:UserStreamMessageObservable.cs" caret="1020" fromTop="41" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:UserStreamMessageObservable.cs" caret="1027" fromTop="30" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:UserStreamMessageObservable.cs" caret="951" fromTop="25" />
+      <File id="D7807481-3D42-423F-953C-9F40BDBAFB2B/f:Program.cs" caret="98" fromTop="2" />
+      <File id="D7807481-3D42-423F-953C-9F40BDBAFB2B/f:Program.cs" caret="13" fromTop="0" />
+      <File id="D7807481-3D42-423F-953C-9F40BDBAFB2B/f:Program.cs" caret="663" fromTop="20" />
+      <File id="0E63992F-12D3-4D3F-9690-E67594478F23/f:UserStreamMessageObservable.cs" caret="719" fromTop="21" />
+      <File id="D7807481-3D42-423F-953C-9F40BDBAFB2B/f:Program.cs" caret="559" fromTop="18" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.5.6\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@TweetSharp.FluentTwitter">
+      <Item value="CreateRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TweetSharp.IFluentTwitter">
+      <Item value="AuthenticateWith`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@TweetSharp.Rx.Specs.Settings">
+      <Item value="ConsumerKey" priority="0" />
+      <Item value="ConsumerSecret" priority="0" />
+      <Item value="Token" priority="0" />
+      <Item value="TokenSecret" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="Serialization" priority="0" />
+      <Item value="Settings`0" priority="2" />
+      <Item value="interface" priority="0" />
+      <Item value="public" priority="0" />
+      <Item value="ITwitterUserStream`0" priority="0" />
+      <Item value="TwitterNodeBase`0" priority="0" />
+      <Item value="root" priority="0" />
+      <Item value="Console`0" priority="2" />
+      <Item value="result" priority="1" />
+      <Item value="It`0" priority="0" />
+      <Item value="null" priority="2" />
+      <Item value="Console" priority="0" />
+      <Item value="System" priority="2" />
+      <Item value="TweetSharp" priority="0" />
+      <Item value="new" priority="5" />
+      <Item value="TimeSpan" priority="0" />
+      <Item value="WaitHandle" priority="0" />
+      <Item value="twitter" priority="1" />
+      <Item value="false" priority="0" />
+      <Item value="WaitHandle`0" priority="0" />
+      <Item value="string" priority="4" />
+      <Item value="observer" priority="3" />
+      <Item value="private" priority="3" />
+      <Item value="void" priority="0" />
+      <Item value="IObservable" priority="0" />
+      <Item value="IObserver" priority="1" />
+      <Item value="ITwitterBlocksList`0" priority="0" />
+      <Item value="_observers" priority="1" />
+      <Item value="return" priority="0" />
+      <Item value="Action`0" priority="1" />
+      <Item value="ctor" priority="0" />
+      <Item value="_action" priority="0" />
+      <Item value="c" priority="0" />
+      <Item value="internal" priority="0" />
+      <Item value="from" priority="1" />
+      <Item value="in" priority="1" />
+      <Item value="var" priority="0" />
+      <Item value="observers" priority="0" />
+      <Item value="foreach" priority="0" />
+      <Item value="AsParallel`0" priority="0" />
+      <Item value="userStream" priority="3" />
+      <Item value="using" priority="0" />
+      <Item value="message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TweetSharp.Twitter.Fluent.IFluentTwitter">
+      <Item value="Stream`0" priority="0" />
+      <Item value="Configuration" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TweetSharp.Twitter.Fluent.ITwitterStream">
+      <Item value="FromUser`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TweetSharp.Twitter.Fluent.ITwitterStreamingUser">
+      <Item value="CallbackTo`0" priority="0" />
+      <Item value="Take`0" priority="1" />
+      <Item value="For`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="2" />
+      <Item value="ReadKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TweetSharp.Twitter.Model.TwitterResult">
+      <Item value="Response" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TweetSharp.Twitter.Fluent.ITwitterLeafNode">
+      <Item value="BeginRequest`0" priority="1" />
+      <Item value="Configuration" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ShouldBeNull`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.WaitHandle">
+      <Item value="WaitAll`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IAsyncResult">
+      <Item value="AsyncWaitHandle" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TweetSharp.Twitter.Fluent.IFluentTwitterConfiguration">
+      <Item value="CompressHttpRequests" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IObserver`1">
+      <Item value="OnNext`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="0" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="ToArray`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Action">
+      <Item value="Invoke`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IObservable`1">
+      <Item value="Subscribe`0" priority="2" />
+      <Item value="ObserveOn`1" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

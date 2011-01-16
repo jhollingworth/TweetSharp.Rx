@@ -1,0 +1,10 @@
+<Modules>
+  <Module PersistentId="0E63992F-12D3-4D3F-9690-E67594478F23" ModuleId="TweetSharp.Rx" />
+  <Module PersistentId="CBA375D4-CBAA-42D0-9B5F-8DBA8DFD5F8C" ModuleId="TweetSharp.Rx.Specs" />
+  <Module PersistentId="D7807481-3D42-423F-953C-9F40BDBAFB2B" ModuleId="TweetSharp.Rx.Console" />
+  <Module PersistentId="TweetSharp.Twitter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d" ModuleId="TweetSharp.Twitter" />
+  <Module PersistentId="TweetSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d" ModuleId="TweetSharp" />
+  <Module PersistentId="A0408FE9-6EEA-40D2-AAF6-1D3B1D3244AF" ModuleId="TweetSharp_1" />
+  <Module PersistentId="B9FFEB65-6BF4-4A61-9DD2-9EF26FAADF46" ModuleId="TweetSharp.Twitter_1" />
+  <Module PersistentId="CD569558-9092-466B-8670-EA1B151150E0" ModuleId="Hammock" />
+</Modules>
