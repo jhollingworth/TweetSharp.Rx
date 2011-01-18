@@ -1,5 +1,0 @@
-C:\src\TweetSharp\src\bin\net35\Twintimidator.UnitTests.dll
-C:\src\TweetSharp\src\bin\net35\Twintimidator.UnitTests.pdb
-C:\src\TweetSharp\src\vs2010\Twintimidator\Twintimidator.UnitTests\obj\Debug\ResolveAssemblyReference.cache
-C:\src\TweetSharp\src\vs2010\Twintimidator\Twintimidator.UnitTests\obj\Debug\Twintimidator.UnitTests.dll
-C:\src\TweetSharp\src\vs2010\Twintimidator\Twintimidator.UnitTests\obj\Debug\Twintimidator.UnitTests.pdb

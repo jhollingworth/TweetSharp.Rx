@@ -1,5 +1,0 @@
-C:\src\TweetSharp\bin\net40\TweetSharp.Twitter.Silverlight.dll
-C:\src\TweetSharp\bin\net40\TweetSharp.Twitter.Silverlight.pdb
-C:\src\TweetSharp\src\vs2010\Net40\TweetSharp.Twitter.Silverlight\obj\Debug\ResolveAssemblyReference.cache
-C:\src\TweetSharp\src\vs2010\Net40\TweetSharp.Twitter.Silverlight\obj\Debug\TweetSharp.Twitter.Silverlight.dll
-C:\src\TweetSharp\src\vs2010\Net40\TweetSharp.Twitter.Silverlight\obj\Debug\TweetSharp.Twitter.Silverlight.pdb
