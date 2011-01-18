@@ -4,7 +4,7 @@ using TweetSharp.Twitter.Model;
 
 namespace TweetSharp.Rx
 {
-    public interface IUserStreamObservable : IObservable<TwitterStatus>, IObservable<Delete>
+    public interface IUserStreamObservable : IObservable<TwitterStatus>, IObservable<DeleteTweet>, IObservable<Friends>
     {   
     }
 }

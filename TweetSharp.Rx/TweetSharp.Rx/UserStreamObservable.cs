@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using TweetSharp.Rx.Entities;
 using TweetSharp.Rx.MessageProcessors;
@@ -10,65 +9,46 @@ namespace TweetSharp.Rx
 {
     public class UserStreamObservable : IUserStreamObservable
     {
-        private readonly List<IMessageProcessor<ITwitterModel>> _processors = new List<IMessageProcessor<ITwitterModel>>();
+        private readonly IObservable<TwitterResult> _messageStream;
+        private readonly IObservable<TwitterStatus> _statusObservable;
+        private readonly IObservable<DeleteTweet> _deleteObservable;
+        private readonly IObservable<Friends> _friendsObservable;
 
-        private readonly Dictionary<Type, List<IObservable<ITwitterModel>>> _observers = new Dictionary<Type, List<IObservable<ITwitterModel>>>();
 
         public UserStreamObservable(ITwitterStreamingUser userStream)
         {
-            userStream.Take(1).CallbackTo(MessageRecieved).BeginRequest();
+            _messageStream = new UserMessageStreamObservable(userStream);
 
-            _processors.Add((IMessageProcessor<ITwitterModel>) new FriendMessageProcessor());
-            _processors.Add((IMessageProcessor<ITwitterModel>) new StatusMessageProcessor());
-            _processors.Add((IMessageProcessor<ITwitterModel>) new DeleteMessageProcessor());
+            var statusProcessor = new StatusMessageProcessor();
+            var deleteProcessor = new DeleteMessageProcessor();
+            var friendProcessor = new FriendMessageProcessor();
 
-            foreach (var processor in _processors)
-            {
-                _observers.Add(processor.GetType(), new List<IObservable<ITwitterModel>>());
-            }
-        }
+            _statusObservable = _messageStream
+                .Where(s => statusProcessor.MessageRegex.IsMatch(s.Response))
+                .Select(statusProcessor.Process);
 
-        private void MessageRecieved(object sender, TwitterResult result, object userstate)
-        {
-            var response = result.Response.Trim();
-            foreach (var processor in _processors)
-            {
-                if (processor.MessageRegex.IsMatch(response))
-                {
-                    processor.Process(result);
-                    break;
-                }
-            }
+            _deleteObservable = _messageStream
+                .Where(s => deleteProcessor.MessageRegex.IsMatch(s.Response))
+                .Select(deleteProcessor.Process);
 
-            //var observers = _observers.ToArray();
-
-            //foreach (var observer in observers)
-            //{
-            //    observer.OnNext(result.Response);
-            //}
+            _friendsObservable = _messageStream
+                .Where(s => friendProcessor.MessageRegex.IsMatch(s.Response))
+                .Select(friendProcessor.Process);
         }
 
         public IDisposable Subscribe(IObserver<TwitterStatus> observer)
         {
-            //_statusObservers.Add(observer);
-
-            //return new ActionDisposable(() => _statusObservers.Remove(observer));
-
-            return null;
+            return _statusObservable.Subscribe(observer);
         }
 
-        private IDisposable AddObserver<T>(IObserver<T> observer)
+        public IDisposable Subscribe(IObserver<DeleteTweet> observer)
         {
-            return null;
+            return _deleteObservable.Subscribe(observer);
         }
 
-        public IDisposable Subscribe(IObserver<Delete> observer)
+        public IDisposable Subscribe(IObserver<Friends> observer)
         {
-            //_deleteObservers.Add(observer);
-
-            //return new ActionDisposable(() => _deleteObservers.Remove(observer));
-            return null;
-
+            return _friendsObservable.Subscribe(observer);
         }
     }
 }

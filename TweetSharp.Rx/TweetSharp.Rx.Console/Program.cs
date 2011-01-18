@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using TweetSharp.Rx.Entities;
 using TweetSharp.Twitter.Fluent;
 using TweetSharp.Twitter.Model;
@@ -16,18 +15,14 @@ namespace TweetSharp.Rx.Console
                 .FromUser()
                 .ToObservable();
 
-            var statusSubscriber = twitter
-                .Where<TwitterStatus>(s => s.Text != "FOo")
-                .Subscribe(status => System.Console.WriteLine(status.Text));
+            twitter.Subscribe<TwitterStatus>(s => System.Console.WriteLine("Status: " + s.Text));
+            
+            twitter.Subscribe<Friends>(s => System.Console.WriteLine("Friend Ids: " + s.FriendIds));
 
-            var deleteSubscriber = twitter.Subscribe<Delete>(System.Console.WriteLine);
+            twitter.Subscribe<DeleteTweet>(s => System.Console.WriteLine("Tweet Deleted: " + s.RawSource));
             
             System.Console.WriteLine("Press enter to quit");
             System.Console.ReadKey();
-
-            statusSubscriber.Dispose();
-            deleteSubscriber.Dispose();
-
             System.Console.WriteLine("Goodbye!");
         }
     }

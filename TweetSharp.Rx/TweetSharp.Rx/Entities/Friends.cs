@@ -3,7 +3,7 @@ using TweetSharp.Twitter.Model;
 
 namespace TweetSharp.Rx.Entities
 {
-    internal class Friends : ITwitterModel
+    public class Friends : ITwitterModel
     {
         public string FriendIds { get; set; }
 

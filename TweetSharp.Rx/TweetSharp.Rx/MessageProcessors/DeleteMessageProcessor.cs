@@ -4,7 +4,7 @@ using TweetSharp.Twitter.Model;
 
 namespace TweetSharp.Rx.MessageProcessors
 {
-    internal class DeleteMessageProcessor : IMessageProcessor<Delete>
+    internal class DeleteMessageProcessor : IMessageProcessor<DeleteTweet>
     {
         private readonly Regex _regex = new Regex("^{\\\"delete\\\":");
 
@@ -13,9 +13,9 @@ namespace TweetSharp.Rx.MessageProcessors
             get { return _regex; }
         }
 
-        public Delete Process(TwitterResult result)
+        public DeleteTweet Process(TwitterResult result)
         {
-            return new Delete {RawSource = result.Response};
+            return new DeleteTweet {RawSource = result.Response};
         }
     }
 }
